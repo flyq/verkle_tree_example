@@ -1,0 +1,10 @@
+[package]
+name = "verkle_tree_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# verkle-trie = { git = "https://github.com/crate-crypto/rust-verkle" }
+verkle-trie = { path = "../../rust-verkle/verkle-trie" }
+banderwagon = { path = "../../rust-verkle/banderwagon" }
+hex = "0.4.3"
