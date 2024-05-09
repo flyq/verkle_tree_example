@@ -214,3 +214,202 @@ MemoryDb {
         []: Branch(BranchMeta { commitment: "006bd679a8204502dcbf9a002f0b828aecf5a29a3a5ce454e651e3a96cc02fe2", hash_commitment: "1f470a52c36f350d24aba63cf5de6d676deff21fbd3f844150841197c1c6af19" })
     } 
 }
+
+=======
+trie: 
+MemoryDb { 
+    leaf_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 128]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 128], 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+    }, 
+    stem_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: StemMeta { c_1: "1c788ab811f02c633f5b9505eb167952607ce232837142952498944088f1ce44", c_2: "5bfbef06da1789b6ab950ef19625ab9a4d32449079da600a3d2c7d1338414476", hash_c1: "bb4ea329042701a82badf0da8d1ace7df0e290686e16b7bc89ee0f3c8fd7ab16", hash_c2: "a1503cd997ff9c241b4b43b5e432075fe62cc15b6324b7566d543e76663b9502", stem commitment: "1964a2fb9e8c5d1ff06b4c9f733483b19f40bb8e39828afd549dd077881d1798", hash_stem_commitment: "57e05897b08d0b7dc2c03f965c0bd9b8ff0b6b1febb1e263c5b84eb66ed1381b" }
+    }, 
+    branch_table: {
+        []: Branch(BranchMeta { commitment: "14ee5e5c5b698e363055b41dd3334f8168c7fca4f85c5e30ab39cf9cc2feef70", hash_commitment: "51e3b2b1b4e4fa85098c91c269af56b06a4474b69128dce99846f0549267fd09" }), 
+        [1]: Stem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31])
+    } 
+}
+
+=======
+trie: 
+MemoryDb { 
+    leaf_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128, 128]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128, 128], 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+    }, 
+    stem_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: StemMeta { c_1: "1c788ab811f02c633f5b9505eb167952607ce232837142952498944088f1ce44", c_2: "0000000000000000000000000000000000000000000000000000000000000000", hash_c1: "bb4ea329042701a82badf0da8d1ace7df0e290686e16b7bc89ee0f3c8fd7ab16", hash_c2: "0000000000000000000000000000000000000000000000000000000000000000", stem commitment: "0499d7a914a2ceec8cc320a1f73ce7f5fbd0c9754c36831da2e296763a16b6ef", hash_stem_commitment: "b897ba52c5317acd75f5f3c3922f461357d4fb8b685fe63f20a3b2adb014370a" }, 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128]: StemMeta { c_1: "0000000000000000000000000000000000000000000000000000000000000000", c_2: "1933253d246e8b527825f5194237c8f4714834e08483e6e9e67e025e6efc81b4", hash_c1: "0000000000000000000000000000000000000000000000000000000000000000", hash_c2: "b5b6c46f2f892da57ba44d2236ed8236fe93fe7579eb2e266408bd6d43af6613", stem commitment: "41bfe3daebe7cc6e290f6665f5b5264dbd45276fc6f07ad8a9c6290417ebfb1b", hash_stem_commitment: "09eb1603e7a678ff170557aa972096deb0d66c3b07a6d0ee3e00104999d1660b" }
+    }, 
+    branch_table: {
+        []: Branch(BranchMeta { commitment: "242d6bcd1bcee9a0511acca496121ad0e283bc8e0a32b1c524ea28833e5a9ea6", hash_commitment: "cae8d5b4fb24fe58c672254ed2a7495a9165e1fdefd641926059d73fd88d980e" }), 
+        [1]: Branch(BranchMeta { commitment: "5916ee9391894e2833723786dc38cd526e6c97bd37917f039271d256808f82cd", hash_commitment: "52a123827c09c4924d591fd816458cd4f34ab4ae9c713b6fc4d9ff7c0e1c3819" }), 
+        [1, 2]: Branch(BranchMeta { commitment: "0599731d5f3c39173602032077c48e743ed224abf3227538383506ba49b5e776", hash_commitment: "a111553b22c3fafe237ec4f16854c284ffb46ba9b2c76692083266b953663506" }), 
+        [1, 2, 3]: Branch(BranchMeta { commitment: "0c21f1831e8250fe1698165d8712eadee73825af70b9016a5eaaa21b470df526", hash_commitment: "618daf6a800aeca179c7d695bc42c2afa2ef05d4f31a45abace759d55632c31b" }), 
+        [1, 2, 3, 4]: Branch(BranchMeta { commitment: "64c6c813186a94716da41b50d9f11ef0696964486b34cf30bf1d8b22fee79fb2", hash_commitment: "23259671ab9b97d420add5ff50521eff0372a0726273b4aafb3b110bca5ed801" }), 
+        [1, 2, 3, 4, 5]: Branch(BranchMeta { commitment: "70c1668cc2ad2a9a54e95e41b4b0932089a5eb90b71fad47941931473b8c0e98", hash_commitment: "064556ba9925819354c5cabf25e3f7f19ed73b868e60636934a5484251797c06" }), 
+        [1, 2, 3, 4, 5, 6]: Branch(BranchMeta { commitment: "5b896c0393ec421a4eb09e8a78b441d2bf1fc9c2b5f1747a6ec0150b8f4236c7", hash_commitment: "b023325ca9f1ff5e16e9c38f850dcaa8170f1d283da35be31bc654e394fb140e" }), 
+        [1, 2, 3, 4, 5, 6, 7]: Branch(BranchMeta { commitment: "323aead6ce8911588c61e6c31fc0e56cec86cf7c2169a1a7fe6272cd1b3487e4", hash_commitment: "c3f74fda0f378c1ccdac707735ae248c77eb629f241429fba513b19aff748f1b" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8]: Branch(BranchMeta { commitment: "2bd9f559377079b06e4d456611475588d919cae89cb2400fd9047d6a3a2993d7", hash_commitment: "4c6d492046992110efbc1a01ed2b261d2ad19ecc0232c4949088c51f72770e1a" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9]: Branch(BranchMeta { commitment: "273daa9597c78d482f15d0905f5d76cfee913f138742dc1f47e0997920bc9efa", hash_commitment: "bc06229e9f921ab0b0048d60302fb0a4824fbce5d2fe360bc136adaa07affd0d" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]: Branch(BranchMeta { commitment: "56beeafcb5389d71e1fe09c16a6c08b11f5670e76b95608f275c4a498dc68103", hash_commitment: "18cd6a035debb54e36829fe604ab9eb5fb383dca3a6d910eeb98fafa367d1404" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]: Branch(BranchMeta { commitment: "322dfdeff155f6699c0d61213e4c6e94896b4cfab9e254c41bd890f7c464ca5d", hash_commitment: "62d4319783cfe9cd16b7859de697a1042a9813fddc2f74b2ecdfba8007f63c10" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]: Branch(BranchMeta { commitment: "6d89065306a28858aec01c0c912554abc542965774e4f9c1e662171bb58d0641", hash_commitment: "c032cf187c8d5de863230117b9d273326845252b0652621d4760100493632409" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]: Branch(BranchMeta { commitment: "0d21d84cabe150fdf0811302724c6212c04cf1d5612756f1db6a5fb3c785d146", hash_commitment: "a2a039915bda47e2e864c42dec76ed24f69ed113517a7480c5518a67ecc76f0a" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]: Branch(BranchMeta { commitment: "60448527b7cfdc085605acc85da690641d151b3b505fed1b6e09b86aa3cac2e4", hash_commitment: "8450fc8fb266edc5fd23f9add6c867868c4bfb5e9985946fbf8917d52feace14" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]: Branch(BranchMeta { commitment: "50e92e37f1207be2d77984aa22b8706e93afcec7b343a630ffb2f210039d7914", hash_commitment: "a6f0946b8b1ed7b8c9d7f59d7f0b490e7009ba3ca91822991428da1d06985b14" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]: Branch(BranchMeta { commitment: "65034eeaabdba8b297f055f84fc99b0f8e743c48b53b1ba02ebac0492d3305b9", hash_commitment: "a526cdb560493fd924573c7e0262d96d24d3644435adc9421c5743a1324cab11" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]: Branch(BranchMeta { commitment: "7076285dd85bad4768f54782a291be120a9f1caa85e146bc80b86b8e8b3de23e", hash_commitment: "0583d92952e115365d98b9c3166c0dbe59d9ad8eb1146c6f02689a629abc0b05" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]: Branch(BranchMeta { commitment: "42f1434f1ef931391fa40a1f188796ba480f71b9ec6246fe25af07c4e56147bf", hash_commitment: "0152f89665824118342c0183f452b01fb12022d38614571a8712f6d11b0c6706" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]: Branch(BranchMeta { commitment: "286f0a4bdb6c6e36341ef5a8a7fb1e3766d0369c9339ed88d14be6f01649b82b", hash_commitment: "a11bcdf774aadded6d6955d551dd0e742aa9d39f88ea77faee327a2230c7e105" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]: Branch(BranchMeta { commitment: "458f06734dec2df1d6ab0e2ebc5ac05a6e377ee052b512ec54a0d35206c4351e", hash_commitment: "53f51f600be788ed211166e322b5ae32d224f4e886106e69e1e557469e773b09" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]: Branch(BranchMeta { commitment: "57e4e2320eda2b52a10fbd433882503ff097c638936d3b05030e2ab84801d9b9", hash_commitment: "f53fbb9abcc775cb617dfc8f0aec9086a9238e111946c0c65310726b7dc32209" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]: Branch(BranchMeta { commitment: "453b2eaf587a39b9c912de317e4318d7f674b835824cd48b70f479f920a63dd1", hash_commitment: "a1bf472fb527d7584f497bcb987fe1c71b5f93fca91f2a53dd02f23a372fdf18" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]: Branch(BranchMeta { commitment: "5ee39e8b02aa9a29234cb4f6edf3218b7d7ed269aeba572ae3ed09690c6d3a3c", hash_commitment: "c2b4ce05edde3bde0534bd6b5989d52b3ca537a2bb6f80ec26ea47f2c54d9b17" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]: Branch(BranchMeta { commitment: "5d144f88a33dcbec6cef8791f59e8a2b5928175ab842135fc816ae9dd43c84aa", hash_commitment: "cce3e987c5cb9178e1b87b8c5915c8164f7f3e0fd283037757debdb007cfff06" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]: Branch(BranchMeta { commitment: "6b154f9555d17341d8316bc93b22a6389da7525855d36e04e5887b5f15d84efd", hash_commitment: "b5fa29a87ec2f079d89f2b90fea6b40fdb8352030b5574063a9ba587f665cb1a" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]: Branch(BranchMeta { commitment: "41efdf88d244dc242a537965540766004a7d6d919b517157c2bf1f6abc4191cb", hash_commitment: "6a5ae049de10abaaeaf2340c814bef831f446f03fe86ab7e2244b9149267ee1c" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]: Branch(BranchMeta { commitment: "64e51667c7f85069da9a9bd7ea42e02f921aac636d62fd27bbfceca33842c648", hash_commitment: "58e1d3555aaa9d54de58e2a6be1298298c9527749c4f34c0c7c4c75d85b8cb11" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]: Branch(BranchMeta { commitment: "37dc33de43b016b7595d46423f9c5141fad8c5658ba5269f330058bcdb46ab9b", hash_commitment: "bbc37bf9dbf12e584db171ed64a4ef47cb2b29a7898d6ae2f769cd5c93c9f512" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]: Branch(BranchMeta { commitment: "603bf7550802636873c4959d220d6f8cdb9932a209d9f95409afd8a4f66ab81d", hash_commitment: "c56040fbbdc4ae0d22e356f2fe8e9fe930905a04a8d6b5fbb48475ead425d11b" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]: Branch(BranchMeta { commitment: "32408e4af31bac671cb555a3b71bf6ac5edf790c5d01fbe44ec01c3f6a807329", hash_commitment: "d7c6b9786a70682eff51ddd53c771674afc3b7cbcae5a3e0039563a7c49a9a02" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: Stem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31])
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128]: Stem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128]), 
+    } 
+}
+
+=======
+trie: 
+MemoryDb { 
+    leaf_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+    }, 
+    stem_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: StemMeta { c_1: "1c788ab811f02c633f5b9505eb167952607ce232837142952498944088f1ce44", c_2: "0000000000000000000000000000000000000000000000000000000000000000", hash_c1: "bb4ea329042701a82badf0da8d1ace7df0e290686e16b7bc89ee0f3c8fd7ab16", hash_c2: "0000000000000000000000000000000000000000000000000000000000000000", stem commitment: "0499d7a914a2ceec8cc320a1f73ce7f5fbd0c9754c36831da2e296763a16b6ef", hash_stem_commitment: "b897ba52c5317acd75f5f3c3922f461357d4fb8b685fe63f20a3b2adb014370a" }
+    }, 
+    branch_table: {
+        []: Branch(BranchMeta { commitment: "6f5e7cfc3a158a64e5718b0d2f18f564171342380f5808f3d2a82f7e7f3c2778", hash_commitment: "029b6c4c8af9001f0ac76472766c6579f41eec84a73898da06eb97ebdab80a09" }), 
+        [1]: Stem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31])
+    } 
+}
+
+
+========
+trie: 
+MemoryDb { 
+    leaf_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+    }, 
+    stem_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: StemMeta { c_1: "1c788ab811f02c633f5b9505eb167952607ce232837142952498944088f1ce44", c_2: "0000000000000000000000000000000000000000000000000000000000000000", hash_c1: "bb4ea329042701a82badf0da8d1ace7df0e290686e16b7bc89ee0f3c8fd7ab16", hash_c2: "0000000000000000000000000000000000000000000000000000000000000000", stem commitment: "0499d7a914a2ceec8cc320a1f73ce7f5fbd0c9754c36831da2e296763a16b6ef", hash_stem_commitment: "b897ba52c5317acd75f5f3c3922f461357d4fb8b685fe63f20a3b2adb014370a" }
+    }, 
+    branch_table: {
+        [1]: Stem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]), 
+        []: Branch(BranchMeta { commitment: "6f5e7cfc3a158a64e5718b0d2f18f564171342380f5808f3d2a82f7e7f3c2778", hash_commitment: "029b6c4c8af9001f0ac76472766c6579f41eec84a73898da06eb97ebdab80a09" })
+    } 
+}
+
+
+trie: 
+MemoryDb { 
+    leaf_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128, 32]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128, 32], 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+    }, 
+    stem_table: {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: StemMeta { c_1: "1c788ab811f02c633f5b9505eb167952607ce232837142952498944088f1ce44", c_2: "0000000000000000000000000000000000000000000000000000000000000000", hash_c1: "bb4ea329042701a82badf0da8d1ace7df0e290686e16b7bc89ee0f3c8fd7ab16", hash_c2: "0000000000000000000000000000000000000000000000000000000000000000", stem commitment: "0499d7a914a2ceec8cc320a1f73ce7f5fbd0c9754c36831da2e296763a16b6ef", hash_stem_commitment: "b897ba52c5317acd75f5f3c3922f461357d4fb8b685fe63f20a3b2adb014370a" }, 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128]: StemMeta { c_1: "2bbc8f69bc0632d58e6c4c26f94ac477300990f1c18056e5265f721fb4e61a24", c_2: "0000000000000000000000000000000000000000000000000000000000000000", hash_c1: "0975704b0c142afbee292c5cd0a05c229c12bc9d03d82102e1ddee874746df1c", hash_c2: "0000000000000000000000000000000000000000000000000000000000000000", stem commitment: "27d0ddb53c00cfabf35eed381a7a71119b972d66b40fd4b6002665ce8d4366f3", hash_stem_commitment: "b4ba744068a5c71fb7883fc1e13b17400cad669f5e45e4575e1d266d5ffd9a11" }
+    }, 
+    branch_table: {
+        []: Branch(BranchMeta { commitment: "007b13d065e9b50e3fb877d22f9b4c22538efa95f0f4f03f10d99d3e9741bd46", hash_commitment: "7e3cb01cfa1d418f1b4e21a170f4ac8f90cfe529733b77dcdef17d88b9fa2911" }), 
+        [1]: Branch(BranchMeta { commitment: "550f1cc7477961f03676eae2ff3b111c18c7d9a2b4e9fd801accdbbdde53340a", hash_commitment: "b3bac381812facd509b519fce53bd15a38dca478fcf5b4573d61e29e962f0200" }), 
+        [1, 2]: Branch(BranchMeta { commitment: "4b964bd250b0360f844f85bf99f6f63c19965ef38e09bb757522812887c2c17a", hash_commitment: "4eae4934fb58ba7ebc5da0f658d776ac073ff8dd1da3fff6b78cc0d9cd67881a" }), 
+        [1, 2, 3]: Branch(BranchMeta { commitment: "07aa41afa1ff24a1a14dc24844189333bd15cd6747a9d3e03942ad900c78248c", hash_commitment: "b507da6e1616c060280642b44aee07c2bd0e10dcfea62a185a4f6dd931b27519" }), 
+        [1, 2, 3, 4]: Branch(BranchMeta { commitment: "28c0f23a95f956e1a09d924c5254970e2c4d3111211f772491a0c7f970500462", hash_commitment: "4ee4c702eb99c5c57859478251ac4c4e6bc53eefca43b01b1d99b1b0e747210d" }), 
+        [1, 2, 3, 4, 5]: Branch(BranchMeta { commitment: "5f65dcc10ef713856231faed4cc28e61fa2f906bf2774f40164ab7f3b8bfdb68", hash_commitment: "e42ec78e6a00c2700c0ce2eda0681704a088464f19a1a3071508b877f603d70c" }), 
+        [1, 2, 3, 4, 5, 6]: Branch(BranchMeta { commitment: "447737d5d7cd660054bdbf725bb4e4dc9442786baebd730144f3b71f0e509db1", hash_commitment: "34a48fa854a213e53de235b3f47864224e6549b0c0c02d1d63131bdaf9687000" }), 
+        [1, 2, 3, 4, 5, 6, 7]: Branch(BranchMeta { commitment: "3d6880bb9855fa885978e9e70f01d59dfaee2071ed9a6137f0948a83b3d8839d", hash_commitment: "65269974bc7a7001c36a6fd608f7a54081861433e3ba46129e97d9857f1a8308" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8]: Branch(BranchMeta { commitment: "6cab91ed084b3a1daefdd81b8baaf177426be9fd7bb911b9bd8f2f18b3563da2", hash_commitment: "a24d3dfb07867ad69da0ef8bd7bae02c64a15962b3e2e4b44892e8619dec7f07" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9]: Branch(BranchMeta { commitment: "504d2ec31624a3b9d202969d3d85ddc3bc81cbe59df092a352d2d3647ad560ca", hash_commitment: "2078167cb04f54337c900121d907a64dc96f361f7d77137c33f1955143a9a60d" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]: Branch(BranchMeta { commitment: "02a1ae70579da7861ffdd8b987a9438d94c786c64223c3512d0f9a6a33b0291b", hash_commitment: "ee421cb49dd7a5a0e843f00557a105b4212019d5841cabe5e1139a82255e4a13" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]: Branch(BranchMeta { commitment: "4a54de5c9ef39ab369205fd85f2dfc1aeb40194b4d6b62b0b2c15fba76c738ee", hash_commitment: "eb93e6944513fcee4096d08754a54e36f5fc01f6cf3f8f65c3aab26e34f0ee04" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]: Branch(BranchMeta { commitment: "44a590b9044bd9bc9a656e3acd1220ca5476806a0dba6c2b4c5a36d17a47320e", hash_commitment: "e8e5f8ffd93dfdd0da0912b5ea23a52b6888efb1dd36776b1fb00ea578c7e203" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]: Branch(BranchMeta { commitment: "01c26d527d0ca8c2f96ef99b7ad8ee008cfca32ec3225c391ded05f4cf7e64e3", hash_commitment: "692d0fa1da0bad24081522224df71afbb69a933ae614139ee1a805658af71711" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]: Branch(BranchMeta { commitment: "2efd7532ac157a63c614ad6b0bd2df5f52ad0ad31d74510a3cde10c44bba2be3", hash_commitment: "b1de3db2300278dcb25dd70d5b8d423cab5a470c7ac2ac2247d26c42a571c313" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]: Branch(BranchMeta { commitment: "030f15f68ddc85239f9fe9d6b7cae1c13e1edc3e7235260d1d2fd84cca6cb2ed", hash_commitment: "dab797b7e8d1bc00216ccd6d234567cd350c59df52b3fb22d6171d6e106c991b" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]: Branch(BranchMeta { commitment: "38057a77a01deed54799258f7608970595ef036b48f70c2b4fef57461a22bd76", hash_commitment: "5715c1a0076f458ee3a3a1eab13f6ab20ccd6da31f387e47451e432a788c3a0d" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]: Branch(BranchMeta { commitment: "245d3e9a016ef7b665a77dc30d2d845dc0c5c838a0ed15969d0d5bc497c0eff5", hash_commitment: "8970357efa49041dc35df44c377467ace671c96deec5421b0bbea723af0ca200" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]: Branch(BranchMeta { commitment: "1eb024b23ce012e110599490e74542524ffd5a2fa2528a66c443c01ca78de9f1", hash_commitment: "529a72a4b0599e95bda504c7006f8e3daa8a811af480c649e6e3c8fe1436310d" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]: Branch(BranchMeta { commitment: "3f0d7aba83f0bd339b588e44d69c0b6ff88925eee3a484ac3bc3df2541d34c09", hash_commitment: "ed13ad6d348aa5c8e2d42a89cb2c04946a92c45f696b4e73f06c813406360c13" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]: Branch(BranchMeta { commitment: "2d2291bbba6099a54cf757ccda76b938189b18d307fd0b7131666a5d83f820ab", hash_commitment: "88b057f2d6e5669b080a0c1b7a0abb6a8d9c042ad416730cf3b5d81e5b08350d" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]: Branch(BranchMeta { commitment: "38f7f89205f17984c9ea8f154387cb43797628a1eccc78567d652d03e7efef04", hash_commitment: "e138ae4162fa2272540837544f2ee22af3feefc5346593534a69aab44dcf5407" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]: Branch(BranchMeta { commitment: "4538ed9144fc034a751e86617b9a6fc8aaec7aada403bffee4e7b8e0b4c620c8", hash_commitment: "c9c9b28f33c5f4a33c3411aa70c1f1cfa62462f2c10e8b66bbefbdff9a870711" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]: Branch(BranchMeta { commitment: "0cbba72069d1b2d2f87038374c81fd3f6e1faa9f135870cf74ea714b3e319bf1", hash_commitment: "2ac3dc4ec5bd2b1f6853403386e6df481abaa7aa2d172b27d7631adffeed6110" })
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]: Branch(BranchMeta { commitment: "20d3302b275ce67edc1113db84fe6b24b61449be11020c19c929e3cc877ea15a", hash_commitment: "a05ca8a7727798d290617b5d4ab0e92617479536fcb64e51c5a76c27904b050b" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]: Branch(BranchMeta { commitment: "148f434bbfe59bad8c1d32f3d34fe75e204e068e6d8b56fce2e0c97847c92625", hash_commitment: "f421f22878eda6dab003f01f3557e8c5163e319dd9c8929c63da0162f335c90c" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]: Branch(BranchMeta { commitment: "29a82b66f628096d7208479a406c9ad98dcb42f8c645aadbbd405acdf7448816", hash_commitment: "475f239a1cdd649ee4cf75d9fc15efb035e30eee1e5618d5380930cf1987b313" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]: Branch(BranchMeta { commitment: "27abba8cecd02a1f78e9b9eee775b2f74fb65b0b232091d35d08142889315da8", hash_commitment: "2278dea517cb214bc239ddd5060e3991b6027219d9b3c77ad20a37352cbfbc1b" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]: Branch(BranchMeta { commitment: "6bcf26fa9e841a478aee4cd535fd19a842d93e3097b3a80b3699a2082d45324b", hash_commitment: "b41f0f6ce0fb0db89caa414792f5fe559ff40fc08ff6323398202ffe7d0a2600" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]: Branch(BranchMeta { commitment: "09021cfc7e81645e46cf3e1c7ca362dcfb397ebc2434326fe214ed09777ac3b9", hash_commitment: "30f3d54e291a1b02a1839472eecaa43068b3ec4eff517040192cd0338485bd11" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]: Branch(BranchMeta { commitment: "0709da7dc648ac85663e315e4fa4ddcc0bf8e5958b9b7ecdc3f448e1fe811abc", hash_commitment: "245e68107da44979298e4e2d7365fd702e4b4a1490f995583da821c54080140b" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: Stem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128]: Stem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 128]), 
+    } 
+}
+
+
+=======
+trie: 
+MemoryDb { 
+    leaf_table: {
+        [0, 147, 89, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]: [0, 147, 89, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32], 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32], 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 255]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 255]
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 255, 32]: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 255, 32], 
+        [255, 255, 255, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]: [255, 255, 255, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32], 
+    }, 
+    stem_table: {
+        [0, 147, 89, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: StemMeta { c_1: "73d917b3831e68a8d9c8caf85c5a2050bb19939bbea21d1e85f8badbe677af3b", c_2: "0000000000000000000000000000000000000000000000000000000000000000", hash_c1: "009bfe2416b34f73bfe8f6156e694e68643ce7aa66795fbaa56b320630f61e15", hash_c2: "0000000000000000000000000000000000000000000000000000000000000000", stem commitment: "0b88928597162b9bb841229013a88018b4c3894ba5ed871558c18a82ba0dfa46", hash_stem_commitment: "55f61a90210617307280e9a0af31f4e8ff16aa172f7939288cf5e05dfea89f16" }, 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: StemMeta { c_1: "1c788ab811f02c633f5b9505eb167952607ce232837142952498944088f1ce44", c_2: "2eae3d2799feac730502cb368f1e03c396152acef5850af1080bac9b9b1a1bdd", hash_c1: "bb4ea329042701a82badf0da8d1ace7df0e290686e16b7bc89ee0f3c8fd7ab16", hash_c2: "2d8db5cc23f07807050289b9d2ad25417ec8edf5316e9f187dc5415ea2989c11", stem commitment: "0894c3af07b5960fa692cb0e9254b5d13d6dde1527eb7840c2a284f099effabc", hash_stem_commitment: "bedbe07553989903d1145c001e311e3656a7a99ef333d10f0fa43caf0b238f06" }, 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 255]: StemMeta { c_1: "02f0b6da15022612c78e4753fefa496e04a77c3dd717c64069f8a161d01ba98a", c_2: "0000000000000000000000000000000000000000000000000000000000000000", hash_c1: "53716913b45eadefb22be4bfd54cc97d33e3861306f5991250d1b1fdb8ec810b", hash_c2: "0000000000000000000000000000000000000000000000000000000000000000", stem commitment: "213c87a7649761450b8f6c70a28387ac40b647d56c47e26b026e8b7864e4b32e", hash_stem_commitment: "c67b17376df4183fb55f4856acde82320567e3f125aabc78c206a6008125d813" }, 
+        [255, 255, 255, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: StemMeta { c_1: "4e1a982fc119ced1a117f7216c13869a7202aeb95fe451b2e388a7c6738bb0bb", c_2: "0000000000000000000000000000000000000000000000000000000000000000", hash_c1: "fa5be101b98ed958e7fef467dc99eb0432e8ec8a3deab5a3d93619d982a0f812", hash_c2: "0000000000000000000000000000000000000000000000000000000000000000", stem commitment: "3ae472e8279ac074679dbb1a1d2f7719474ad55f3f9db3da1e15bebf80d751c8", hash_stem_commitment: "fe58b187a981f1e102ed0701f7e567e5db42c5a9a62f52c0a9cccc18bb6e9606" }
+    }, 
+    branch_table: {
+        []: Branch(BranchMeta { commitment: "639bd963139ed15d5d59d27672c7e4e0411ee6ce2cc04003e700858fc58d3bc0", hash_commitment: "fa2b826d5c646879f1405929569e3e275e2d2a05b0e53d37a16657b282827115" }), 
+        [0]: Stem([0, 147, 89, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]),         
+        [1]: Branch(BranchMeta { commitment: "25abd83215da488d545ec49a3fd600b7d87f9619b7e150d3955af1e015d197ca", hash_commitment: "9fc1ca84c1d85bb2e0e76cc9084593d5c0955e9d36f84c0f2eb7c2d24e06b902" }), 
+        [255]: Stem([255, 255, 255, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]), 
+        [1, 2]: Branch(BranchMeta { commitment: "2e4eec19dcaa01a293d71d0eb8b4cfdf279df13e3a0a45cdee58483cc27ceac4", hash_commitment: "dd5ea5f363204f6bba005c867a36cb0dfc8043fdfb6df6afde2f041b912a7a14" }), 
+        [1, 2, 3]: Branch(BranchMeta { commitment: "2ab6e6c70576a28ea83c26a48c1ee425bed0cf73ec0941134181ea2a349d7e68", hash_commitment: "665951f5100471b503bb4daa72343543eb49a9c2e23ce8286ddb4adc30220317" })
+        [1, 2, 3, 4]: Branch(BranchMeta { commitment: "0156713a4ace1c8bc44622f9e120a1ec1494329699f1170bccfc7ee66ce07b49", hash_commitment: "aab178f60ea342d27f942af30fcc9dd775dbed6a09cd05b57083b7209d526918" }), 
+        [1, 2, 3, 4, 5]: Branch(BranchMeta { commitment: "724020a90a9d53ba3a406866889f2050fc211c74fbe0375e3cbcf5318249fa4f", hash_commitment: "127d204ddc3c05947cbc7f324df419b81f87427d4d37e99f3d97c907c7b18e17" }), 
+        [1, 2, 3, 4, 5, 6]: Branch(BranchMeta { commitment: "2c4a58c729b6b974aaaefadf6c190be12b27b505e1ef5b99c17e8d0db56f209a", hash_commitment: "fb3c16b0d2b558b7ef4918d2d5ffe09583bfabf72bfd82ebcba8c1c8a0a62910" }),
+        [1, 2, 3, 4, 5, 6, 7]: Branch(BranchMeta { commitment: "40d5f96e5fc54b2dd18b8d1f25290aaa7911edc410443c105e3fea13d88c134b", hash_commitment: "4a92190c98152fd8958c048a87da642f8c50bbe999180bdbadfbd949ee3bed05" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8]: Branch(BranchMeta { commitment: "695dbab3ce4fdd3f7df07693ff5f6ae40eca1bb044ad5926817fea36d8475d16", hash_commitment: "75c303f2c1d0f8f473bc1fb7c26245033d4dc14c8fb182acd46673f786f46f03" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9]: Branch(BranchMeta { commitment: "4e0b917decfb719e3609ae65d74dd0324c67d1f4f07768ee19d7138dfd550178", hash_commitment: "b3afdb41fa3dce4b46d613585bd764f3b8282b856f9ee77ef3ee94232cd3b40d" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]: Branch(BranchMeta { commitment: "4bf597a27e4a2035ac92bf66ca78bbb38f6e5a40dbc43335381153226c0d4f93", hash_commitment: "6e1ddc577a3c9c6e0793c05f1e2b47dda0ace2e6f14939e85c0198f81b677c1a" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]: Branch(BranchMeta { commitment: "25a31a8001c5b3fbe91b0df2575c83b29cca857287b668c5387007eda5b64f9e", hash_commitment: "024ccc7f77b70dddb6907b3efde2a9df301d50293d56869e4d0333ae26e10709" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]: Branch(BranchMeta { commitment: "0055b23e73dc717a9d9e21c0d454b8d68d43b0903842a7223a10ef19f397a842", hash_commitment: "e25c9be0e1547a27e2220117c847e0581e1cea0bd82cc9b24bfc08303e5eb100" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]: Branch(BranchMeta { commitment: "185c0e8aabb2a8eaba71d308cf253b552d17d5225cac96e3de5f557340ee5fa6", hash_commitment: "c7f56001d55178a46546d948c94b741feb1e9ed1cbf1bede5575be2ead697310" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]: Branch(BranchMeta { commitment: "4635e9e93548389dc33c310478d196f69330d3ceafe7f2200052f9ae70f195d8", hash_commitment: "6575c91b0095624b44fff71d4bfabc7516a8e97be5729c94ffce08ee54336315" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]: Branch(BranchMeta { commitment: "6fb3b46cca23459b2752ee17010ce45dcf9cb804f1b27c2f16ab8de65fe3214d", hash_commitment: "7b74d0afc7f2288ed202c4e8b9c85e53159671e19be33b2292bafda25bdb660c" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]: Branch(BranchMeta { commitment: "103f22afd5f446e1660cf04939c005318b67f260a0ffb5e95c186d92221826d8", hash_commitment: "8c679340fa2f8276ee3dabe39385b650f4788757e95144d076f45eaffbd24e09" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]: Branch(BranchMeta { commitment: "40148211df6728158f3d469e02a404e31dd75b3eb597e7312a5cdb2e25173785", hash_commitment: "c518006e0a02f0167c8e99c2b670806a84b2e1afa2c7b3fad67521b9d8566a05" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]: Branch(BranchMeta { commitment: "2855ba75984cf5b9c690ec0e2b8ead2fae944053cc727ae81424d777a0ffdacd", hash_commitment: "6bf6b658edc726c71f57be78e189ab8e795180fea437176b42746f1c8f61881b" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]: Branch(BranchMeta { commitment: "6a939ed6c55602097a3b57f876ca456a22116396c0eac330e61f90f51946fe25", hash_commitment: "c2146aad2eae428af96c99c29cd684fd1b681bb22de238fc80d8775fb9150c0d" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]: Branch(BranchMeta { commitment: "37398d3d351ce03365d737999cd3152efb6e27c7edab8d78d5f5bd4dee965d73", hash_commitment: "706f8daf1302344b7c93f06feab043bdbf6bcbda94a2a5c6f87d4cb803c27818" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]: Branch(BranchMeta { commitment: "4e303c8692b155cb0511ba18ff30338875f1fb7679c0153f3c43b4ab259e65f4", hash_commitment: "5e645f0b0788723da9fb79bde824f5a29edb73519f42480721bcf68ecc64330d" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]: Branch(BranchMeta { commitment: "7017974bc8c188001037bdd2b0e12bf594d53aec64ce40ca44eab89a64e13609", hash_commitment: "be7e8bd623375332c5620ae418486220fc3fb538033b4c63fc68fa1f9dcd3302" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]: Branch(BranchMeta { commitment: "04891e38139ea9e31a918151204486f809136f2f2f40dcb47dd98a026e5e7bfa", hash_commitment: "827375c0597075f0f4d15e483062975f85f5f80ebae8ae4e3a7900838427fa03" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]: Branch(BranchMeta { commitment: "6fdad187621aebb0b89a29df40e2dc91ca62e1377969ada67f4a1cbb2fa0499a", hash_commitment: "ce750a6431ab65be1334a1e2417b7f6dccaec0721c7da19b860e819dd43aa309" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]: Branch(BranchMeta { commitment: "3fcd1c83b3ea6b6fee8b8bbcc0253301a9beb2eb8892257747e7003b38a3ea3f", hash_commitment: "532f58c2674efb80d0fcaa0dc78c61e025d5caac2a614a50087ed6c0aceb0a15" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]: Branch(BranchMeta { commitment: "6642d40400bacdf5d62a6876b1195bdf0ca2d3d36df7e80494e34ab1feb12dcf", hash_commitment: "e94b37370fbb02f8e23327e3615fd3cc95ea9ca3897769dc411765f30e85ce14" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]: Branch(BranchMeta { commitment: "37f51bc7d0a4482552882999a567baff1028290766be275df2d661df3eb52a04", hash_commitment: "f4ad4c2e5c7b869233bcdb82c3199ca8d9d4cec80b34b61a3cd71990796c0504" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]: Branch(BranchMeta { commitment: "63726abf5677985ca93aa5209d9595bc767cffa021643d22962b9c124b052269", hash_commitment: "debfb76f357a97bee0de1618c7483f7350c6ff18a28fbe73cdf94600a163bd0c" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]: Branch(BranchMeta { commitment: "167dda0e2dd38f6bbb50c2212929b18705c9599550d6c717b6a093243778e9da", hash_commitment: "6c52ae439e14a332e7eb2b9c89861e468ff3eddd2b1a91e9fc04cb51f60de416" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]: Branch(BranchMeta { commitment: "578e86b7214b4141001f3ba87d2ff691e7e3f4f5a0d0ec166d85e660c86d2515", hash_commitment: "1db9d0fb4c9578351d15e3adf8db5457045bc0de9b99ed8633d6e8ad4f31e50e" }), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]: Stem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]), 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 255]: Stem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 255]), 
+    } 
+}
