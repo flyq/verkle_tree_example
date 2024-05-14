@@ -74,6 +74,42 @@ fn main() {
         "new c_1 hash: {:?}",
         hex::encode(scalar_to_array(&h_c_1).unwrap())
     );
+
+    let stem_key_ff = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
+        26, 27, 28, 29, 30, 0xff,
+    ];
+
+    let branch_id = stem_key[0..30].to_vec();
+
+    let h_stem_ff = old_trie
+        .storage
+        .get_stem_meta(stem_key_ff)
+        .unwrap()
+        .hash_stem_commitment;
+
+    let h_stem_32 = old_trie
+        .storage
+        .get_stem_meta(stem_key)
+        .unwrap()
+        .hash_stem_commitment;
+
+    let branch_commit = old_trie
+        .committer
+        .commit_sparse(vec![(h_stem_32, 31), (h_stem_ff, 0xff)]);
+    let branch_hash = group_to_field(&branch_commit);
+
+    let get_branch = old_trie.storage.get_branch_meta(&branch_id).unwrap();
+    println!(
+        "New branch commitment: {:?}",
+        hex::encode(compress_point_to_array(&branch_commit).unwrap())
+    );
+    println!(
+        "New branch hash: {:?}",
+        hex::encode(scalar_to_array(&branch_hash).unwrap())
+    );
+    println!("branch meta: {:?}", get_branch);
+    assert_eq!(branch_commit, get_branch.commitment);
 }
 
 fn scalar_to_array(scalar: &Fr) -> Result<[u8; 32], SerializationError> {
