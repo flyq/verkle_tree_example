@@ -7,4 +7,6 @@ edition = "2021"
 # verkle-trie = { git = "https://github.com/crate-crypto/rust-verkle" }
 verkle-trie = { path = "../../rust-verkle/verkle-trie" }
 banderwagon = { path = "../../rust-verkle/banderwagon" }
+ipa-multipoint = { path = "../../rust-verkle/ipa-multipoint" }
 hex = "0.4.3"
+ark-serialize = "*"

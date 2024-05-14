@@ -1,4 +1,5 @@
 use banderwagon::{trait_defs::*, Element, Fr};
+use ipa_multipoint::committer::DefaultCommitter;
 use std::ops::Mul;
 use verkle_trie::{
     constants::{CRS, TWO_POW_128},
@@ -318,7 +319,7 @@ pub fn empty_trie() {
     assert_eq!(trie.root_hash(), Fr::zero())
 }
 
-pub fn simple_insert() {
+pub fn simple_insert() -> Trie<MemoryDb, DefaultCommitter> {
     let db = MemoryDb::new();
     let mut trie = Trie::new(DefaultConfig::new(db));
 
@@ -350,7 +351,18 @@ pub fn simple_insert() {
     trie.insert_single(key4, key4);
     trie.insert_single(key5, key5);
 
-    println!("trie: {:?}", trie.storage);
+    println!("old trie: {:?}", trie.storage);
+
+    let old_trie = trie.clone();
+    let key6 = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
+        26, 27, 28, 29, 30, 31, 0x7f,
+    ];
+    trie.insert_single(key6, key6);
+
+    println!("new trie: {:?}", trie.storage);
+
+    old_trie
 }
 
 pub fn simple_update() {

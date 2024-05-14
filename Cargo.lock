@@ -599,8 +599,10 @@ dependencies = [
 name = "verkle_tree_example"
 version = "0.1.0"
 dependencies = [
+ "ark-serialize",
  "banderwagon",
  "hex",
+ "ipa-multipoint",
  "verkle-trie",
 ]
 
