@@ -6,6 +6,7 @@ use verkle_trie::constants::TWO_POW_128;
 use verkle_trie::database::ReadOnlyHigherDb;
 use verkle_trie::group_to_field;
 
+pub mod abel_test;
 pub mod proof;
 pub mod trie;
 
@@ -110,6 +111,8 @@ fn main() {
     );
     println!("branch meta: {:?}", get_branch);
     assert_eq!(branch_commit, get_branch.commitment);
+
+    abel_test::check_update_bytes();
 }
 
 fn scalar_to_array(scalar: &Fr) -> Result<[u8; 32], SerializationError> {
