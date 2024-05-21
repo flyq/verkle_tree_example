@@ -928,6 +928,7 @@ dependencies = [
 name = "verkle_tree_example"
 version = "0.1.0"
 dependencies = [
+ "ark-ff",
  "ark-serialize",
  "banderwagon",
  "ffi_interface",

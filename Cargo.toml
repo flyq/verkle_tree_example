@@ -11,4 +11,5 @@ ipa-multipoint = { path = "../../rust-verkle/ipa-multipoint" }
 ffi_interface = { path = "../../rust-verkle/ffi_interface" }
 hex = "0.4.3"
 ark-serialize = "*"
+ark-ff = "*"
 rand = "0.8"

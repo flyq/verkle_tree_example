@@ -25,6 +25,9 @@ pub fn basic_proof() {
     let meta = trie.storage.get_branch_meta(&root).unwrap();
 
     let proof = prover::create_verkle_proof(&trie.storage, keys.clone()).unwrap();
+
+    println!("proof: {:?}", proof);
+
     let (ok, _) = proof.check(keys, values, meta.commitment);
     assert!(ok);
 }

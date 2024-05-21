@@ -1,3 +1,4 @@
+use ark_ff::biginteger::BigInteger;
 use ark_serialize::CanonicalSerialize;
 use banderwagon::{Element, Fr, PrimeField};
 use ffi_interface::{fr_from_le_bytes, update_commitment_sparse, Context, ZERO_POINT};
@@ -40,7 +41,8 @@ pub fn check_update_bytes() {
     )
     .unwrap();
 
-    let new_c_with_delta = update_commitment_sparse(&vc, old_c, idx, old_bytes, new_bytes).unwrap();
+    let new_c_with_delta =
+        update_commitment_sparse(&vc, old_c, idx, old_bytes.clone(), new_bytes).unwrap();
 
     // let mut val_indices = vec![];
     // for i in 0..100 {
@@ -72,6 +74,10 @@ pub fn check_update_bytes() {
     //  left: [190, 40, 139, 26, 230, 220, 84, 145, 58, 191, 25, 130, 185, 22, 19, 63, 227, 10, 183, 88, 231, 169, 193, 30, 79, 39, 167, 102, 140, 88, 235, 73, 158, 58, 141, 139, 152, 241, 111, 160, 57, 84, 142, 99, 231, 235, 216, 106, 27, 245, 206, 175, 23, 236, 203, 16, 54, 144, 189, 22, 179, 243, 134, 79]
     //  right: [67, 215, 116, 229, 24, 35, 171, 110, 196, 156, 228, 125, 73, 141, 170, 20, 34, 205, 234, 176, 32, 46, 120, 20, 249, 85, 246, 194, 198, 78, 2, 42, 99, 197, 114, 116, 102, 14, 144, 95, 197, 7, 112, 156, 27, 184, 228, 232, 233, 226, 210, 89, 240, 235, 109, 34, 18, 237, 223, 18, 160, 179, 102, 36]
     // note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+    let a = Fr::from_be_bytes_mod_order(&old_bytes[0]);
+    println!("a: {:?}", a);
+    let scalar_wnaf = a.into_bigint().find_wnaf(12).unwrap();
+    println!("scalar_wnaf: {:?}", scalar_wnaf);
 }
 
 pub fn get_random_kvs(l: usize) -> Vec<[u8; FR_SIZE]> {
