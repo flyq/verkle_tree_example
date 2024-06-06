@@ -1,5 +1,6 @@
 use banderwagon::{trait_defs::*, Element, Fr};
 use ipa_multipoint::committer::DefaultCommitter;
+use sha3::{Digest, Keccak256};
 use std::ops::Mul;
 use verkle_trie::{
     constants::{CRS, TWO_POW_128},
@@ -462,4 +463,12 @@ pub fn insert_get() {
     let _val = trie.get(tree_key_nonce).unwrap();
     let _val = trie.get(tree_key_code_keccak).unwrap();
     let _val = trie.get(tree_key_code_size).unwrap();
+}
+
+pub fn test_hash() {
+    for i in 0..1000u32 {
+        let hash = Keccak256::digest(&i.to_le_bytes());
+        let fr = Fr::from_le_bytes_mod_order(hash.as_slice());
+        println!("{}", fr);
+    }
 }

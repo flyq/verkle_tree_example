@@ -11,7 +11,8 @@ pub mod proof;
 pub mod trie;
 
 fn main() {
-    proof::basic_proof();
+    // proof::basic_proof();
+    trie::test_hash()
 }
 
 // fn main() {
