@@ -97,6 +97,54 @@ pub fn simple_serialization_consistency() {
     assert_eq!(proof, deserialized_proof);
 }
 
+pub fn proof_of_absence_edge_case2() {
+    let db = MemoryDb::new();
+    let mut trie = Trie::new(DefaultConfig::new(db));
+    let root = vec![];
+
+    let meta0 = trie.storage.get_branch_meta(&root).unwrap();
+    println!("root commitment: {:?}", meta0.commitment);
+
+    let keys = vec![[0; 32]];
+    let values = vec![Some([0; 32])];
+
+    trie.insert_single([0; 32], [0; 32]);
+
+    let meta1 = trie.storage.get_branch_meta(&root).unwrap();
+    println!("root commitment: {:?}", meta1.commitment);
+
+    let mut key = [0; 32];
+    key[31] = 0xff;
+
+    trie.insert_single(key, [0; 32]);
+    let meta2 = trie.storage.get_branch_meta(&root).unwrap();
+
+    println!("root commitment: {:?}", meta2.commitment);
+
+    let child = trie.storage.get_stem_children([0u8; 31]);
+    println!("{:?}", child);
+
+    assert_ne!(meta1.commitment, meta2.commitment);
+
+    let proof = prover::create_verkle_proof(&trie.storage, keys.clone()).unwrap();
+
+    // println!("{:?}", proof);
+
+    let (ok, _) = proof.check(keys, values, meta2.commitment);
+    assert!(ok);
+
+    let keys = vec![[1; 32]];
+    let values = vec![None];
+
+    let proof = prover::create_verkle_proof(&trie.storage, keys.clone()).unwrap();
+
+    // println!("new: {:?}", proof);
+
+    let (ok, _) = proof.check(keys, values, meta2.commitment);
+
+    assert!(ok);
+}
+
 fn kv_pair() -> Vec<([u8; 32], [u8; 32])> {
     let mut res = Vec::new();
     for i in 0..3 {

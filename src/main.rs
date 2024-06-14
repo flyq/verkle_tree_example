@@ -12,7 +12,8 @@ pub mod trie;
 
 fn main() {
     // proof::basic_proof();
-    trie::test_hash()
+    // trie::test_hash()
+    proof::proof_of_absence_edge_case2();
 }
 
 // fn main() {
