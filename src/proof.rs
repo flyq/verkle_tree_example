@@ -18,7 +18,7 @@ pub fn basic_proof() {
         values.push(Some(i.1));
         trie.insert_single(i.0, i.1);
     }
-    println!("trie: {:?}", trie.storage);
+    // println!("trie: {:?}", trie.storage);
     // println!("poly: {:?}", trie.committer);
 
     let root = vec![];
@@ -26,7 +26,7 @@ pub fn basic_proof() {
 
     let proof = prover::create_verkle_proof(&trie.storage, keys.clone()).unwrap();
 
-    println!("proof: {:?}", proof);
+    // println!("proof: {:?}", proof);
 
     let (ok, _) = proof.check(keys, values, meta.commitment);
     assert!(ok);
